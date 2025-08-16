@@ -1,0 +1,98 @@
+ /* A reset to ensure consistent box model behavior across browsers */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* * General Body Styling:
+         * This sets a base font and background color for the entire page.
+         */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        /*
+         * Container for consistent layout:
+         * This div centers the content and sets a maximum width.
+         */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* * Header and Content Styling:
+         * Uses consistent padding, margin, and border properties.
+         * The margin-bottom creates space between the header and the main content.
+         */
+        .header {
+            text-align: center;
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        p.subtitle {
+            font-style: italic;
+            color: #7f8c8d;
+        }
+
+        /* * Section Styling:
+         * Demonstrates the Box Model with padding and margin.
+         * The border-left provides a visual separation.
+         */
+        .content-section {
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+
+        .content-section h2 {
+            font-size: 1.8rem;
+            color: #34495e;
+            margin-bottom: 1rem;
+        }
+
+        /* * List Styling:
+         * Shows how to style lists and list items.
+         */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #ecf0f1;
+            margin-bottom: 0.75rem;
+            padding: 1rem;
+            border-left: 5px solid #3498db;
+            border-radius: 6px;
+        }
+
+        /*
+         * Footer Styling:
+         * A simple footer with consistent spacing.
+         */
+        .footer {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px dashed #e0e0e0;
+            color: #95a5a6;
+        }
